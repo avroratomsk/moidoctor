@@ -1,0 +1,40 @@
+.nav {
+  background-color: #b4f5d2;
+  border-radius: 10px;
+
+  //.nav__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    list-style: none;
+  }
+
+  //.nav__item
+
+  &__item {
+  }
+
+  //.nav__link
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: #777777;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    text-shadow: 0px 1px 1px #fff;
+    transition: $animation_speed;
+
+    @media(hover:hover) {
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
+
+}

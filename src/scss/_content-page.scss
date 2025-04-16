@@ -1,0 +1,25 @@
+.content-page {
+
+  .container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 120%;
+  }
+
+  p{
+    line-height: 150%;
+    font-size: 16px;
+
+  }
+
+  ul{
+    padding-left: 40px;
+
+    li{
+      line-height: 150%;
+    }
+  }
+}
