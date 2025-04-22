@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"Сборка GULP"
+})
+<body>
+
+<div class="overlay-bg"></div>
+<main>
+
+  <div class="container">
+    <div class="inner">
+      @@include('html/_header.html')
+      <section class="content-page">
+        <div class="container">
+          <h1 style="color: #f24942;font-size: 3.5em; margin: 10px 0 10px 0; text-align: center;">
+            Полезная информация
+          </h1>
+        </div>
+      </section>
+      <section class="price">
+        <div class="container">
+          <div class="price__inner">
+            <div class="col_12 column">
+              <h1 style="text-align: center;">Цены на услуги</h1>
+            </div>
+            <div class="cr_pattern_body">
+              <div class="clear"> </div>
+              <div class="mar"> 
+                <table class="striped">
+                  <tbody>
+                  <tr class="alt first">
+                    <th style="text-align: center; font-size: 120%;" colspan="12">Прейскурант цен на услуги гинеколога
+                    </th>
+                  </tr>
+                  <tr>
+                    <th><strong>№</strong></th>
+                    <td><strong>Наименование услуги</strong></td>
+                    <th style="text-align: center;"><strong>Стоимость услуги</strong></th>
+                  </tr>
+                  <tr class="alt">
+                    <th>1</th>
+                    <td>Прием гинеколога по бесплодию, невынашиванию, одготовка к беременности(первичный)</td>
+                    <th style="text-align: center;">3000 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>Прием гинеколога (первичный)</td>
+                    <th style="text-align: center;">2800 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>3</th>
+                    <td>Прием гинеколога (повторный)</td>
+                    <th style="text-align: center;">2000 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>Кольпоскопия</td>
+                    <th style="text-align: center;">1800 руб.</th>
+                  </tr>
+                  <!-- <tr>
+                                                  <th>5</th>
+                                                  <td>Прием гинеколога первичный</td>
+                                                  <th style="text-align: center;">800 руб.</th>
+                                              </tr> --> <!-- <tr>
+                                <th>6</th>
+                                <td>Прием гинеколога повторный</td>
+                                <th style="text-align: center;">600 руб.</th>
+                            </tr> -->
+                  <tr class="alt">
+                    <th>7</th>
+                    <td>Забор мазков</td>
+                    <th style="text-align: center;">300 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>8</th>
+                    <td>Мазок на АК (атипические клетки)</td>
+                    <th style="text-align: center;">900 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>9</th>
+                    <td>Мазок на ЗППП (микрофлора)</td>
+                    <th style="text-align: center;">400 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>10</th>
+                    <td>Мазок на ПЦР<br/> хламидии<br/> микоплазма<br/>уреаплазма<br/> ВПГ 1 и 2 типов<br/> ЦМВ<br/> ВПЧ
+                      15 типов (качественный метод)<br/> ВПЧ 15 типов (количественный метод)<br/>Инбиофлор<br/> Фемофлор
+                      13<br/>Фемофлор 17
+                    </td>
+                    <th style="text-align: center;"><br/>450 руб.<br/> 450 руб.<br/> 450 руб.<br/> 350 руб.<br/> 350
+                      руб.<br/> 1000 руб.<br/> 1300 руб.<br/> 2300 руб.<br/> 2200 руб.<br/> 2400 руб.
+                    </th>
+                  </tr>
+                  <tr class="alt">
+                    <th>11</th>
+                    <td>Посев из цервикального канала на микрофлору с определением чувствительности к анимикробным
+                      препаратам
+                    </td>
+                    <th style="text-align: center;">2800 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                    <td>Посев из цервикального канала на гриби рода Candida с определением чувствительности к
+                      антимикотическим препаратам
+                    </td>
+                    <th style="text-align: center;">2000 руб.</th>
+                  </tr>
+                  <tr class="alt last">
+                    <th>13</th>
+                    <td>Радиоволновая биопсия шейки матки (процедура + гестологическое исследование)</td>
+                    <th style="text-align: center;">3500 руб.</th>
+                  </tr>
+                  <tr class="alt last">
+                    <th>14</th>
+                    <td>Пайпль-биопсия эндометрия (процедура + гистологическое исследование)</td>
+                    <th style="text-align: center;">3500 руб.</th>
+                  </tr>
+                  <tr class="alt last">
+                    <th>15</th>
+                    <td>Радиоволновая коагуляция шейки матки</td>
+                    <th style="text-align: center;">4500 руб.</th>
+                  </tr>
+                  <tr class="alt last">
+                    <th>16</th>
+                    <td>Введение/удаление ВМК</td>
+                    <th style="text-align: center;">2000 руб.</th>
+                  </tr>
+                  <tr class="alt last">
+                    <th>17</th>
+                    <td>Подготовка документов на ЭКО - первичная</td>
+                    <th style="text-align: center;">3000 руб.</th>
+                  </tr>
+                  <tr class="alt last">
+                    <th>18</th>
+                    <td>Подготовка документов на ЭКО - повторная</td>
+                    <th style="text-align: center;">2500 руб.</th>
+                  </tr>
+                  <!-- <tr>
+                                                  <th>16</th>
+                                                  <td>Пайпль биопсия эндометрия(Процедура + гистологическое исследование)</td>
+                                                  <th style="text-align: center;">2 500 руб.</th>
+                                              </tr> --> <!-- <tr>
+                                <th>17</th>
+                                <td>Радиоволновое лечение шейки матки</td>
+                                <th style="text-align: center;">3 500 руб.</th>
+                            </tr> --> <!-- <tr>
+                                <th>18</th>
+                                <td>Радиоволновая биопсия шейки матки (процедура+ гистологическое исследование)</td>
+                                <th style="text-align: center;">2 400 руб.</th>
+                            </tr> --> <!-- <tr>
+                                <th>19</th>
+                                <td>Введение/удаление ВМК</td>
+                                <th style="text-align: center;">1 500 руб.</th>
+                            </tr> --></tbody>
+                </table>
+              </div>
+              <div class="mar">     
+                <table class="striped">
+                  <tbody>
+                  <tr class="alt first">
+                    <th style="text-align: center; font-size: 120%;" colspan="12">Прейскурант цен на ультразвуковое
+                      исследование
+                    </th>
+                  </tr>
+                  <tr>
+                    <th><strong>№</strong></th>
+                    <td><strong>Наименование услуги</strong></td>
+                    <th style="text-align: center;"><strong>Стоимость услуги</strong></th>
+                  </tr>
+                  <tr class="alt">
+                    <th>1</th>
+                    <td>УЗИ абдоминальное</td>
+                    <th style="text-align: center;">1200 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>УЗИ почек</td>
+                    <th style="text-align: center;">1000 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>3</th>
+                    <td>УЗИ гинекологическое Трансвагинальное/трансабдоминальное</td>
+                    <th style="text-align: center;">1400 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>УЗИ гинекологическое повторное (в течение 1 месяца)</td>
+                    <th style="text-align: center;">1000 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>5</th>
+                    <td>УЗИ щитовидной железы</td>
+                    <th style="text-align: center;">1000 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                    <td>УЗИ молочных желез</td>
+                    <th style="text-align: center;">1200 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>7</th>
+                    <td>УЗИ определение беременности (до 10 недель)</td>
+                    <th style="text-align: center;">1200 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>8</th>
+                    <td>УЗИ предстательной железы (трансвезикально\трансректально)</td>
+                    <th style="text-align: center;">1000 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>9</th>
+                    <td>УЗИ органов мошонки</td>
+                    <th style="text-align: center;">1000 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>10</th>
+                    <td>УЗИ мочевого пузыря</td>
+                    <th style="text-align: center;">1000 руб.</th>
+                  </tr>
+                  <!--  <tr>
+                                                     <th>15</th>
+                                                     <td>Эхогистеросальпингография (проходимость маточных труб) </td>
+                                                     <th style="text-align: center;">2000 руб.</th>
+                                                 </tr> --> <!--  <tr>
+                                   <th>16</th>
+                                   <td>Гидросонография</td>
+                                   <th style="text-align: center;">1 700 руб.</th>
+                               </tr> -->
+                  <tr>
+                    <th>11</th>
+                    <td>УЗИ тазобедренных суставов (детям до 1 года)</td>
+                    <th style="text-align: center;">700 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>12</th>
+                    <td>УЗИ коленного сустава (1 сустав)</td>
+                    <th style="text-align: center;">700 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>13</th>
+                    <td>УЗИ мягких тканей ( 1 область)</td>
+                    <th style="text-align: center;">1000 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>14</th>
+                    <td>УЗИ лимфатических узлов ( 1 область)</td>
+                    <th style="text-align: center;">1000 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>15</th>
+                    <td>УЗИ лонного сочленения (симфиза)</td>
+                    <th style="text-align: center;">800 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>16</th>
+                    <td>Цервикометрия</td>
+                    <th style="text-align: center;">800 руб.</th>
+                  </tr>
+                  <tr class="alt last">
+                    <th>17</th>
+                    <td>Снимок</td>
+                    <th style="text-align: center;">150 руб.</th>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mar">Гистологическое (цитологическое)исследование1 000 руб.
+                <table class="striped">
+                  <tbody>
+                  <tr class="alt first">
+                    <th style="text-align: center; font-size: 120%;" colspan="12">Прейскурант цен на услуги
+                      маммолога-онколога
+                    </th>
+                  </tr>
+                  <tr>
+                    <th><strong>№</strong></th>
+                    <td><strong>Наименование услуги</strong></td>
+                    <th style="text-align: center;"><strong>Стоимость услуги</strong></th>
+                  </tr>
+                  <tr class="alt">
+                    <th>1</th>
+                    <td>Первичный консультативный прием маммолога-онколога</td>
+                    <th style="text-align: center;">2800 руб.</th>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>Повторный консультативный прием маммолога-онколога</td>
+                    <th style="text-align: center;">2000 руб.</th>
+                  </tr>
+                  <tr class="alt">
+                    <th>3</th>
+                    <td>Пункция молочной железы под контролем ультразвука</td>
+                    <th style="text-align: center;">2000 руб.</th>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--div class="col_6"><div class="mar">
+              <img src="https://moidoktorchita.ru/s3.jpg" class="ram">
+              <h5><strong>Тарбаева Долгорома Александровна</strong></h5>
+              <h6><b>Акушер-гинеколог, врач высшей категории.</b></h6>
+              <h6>Кандидат медицинских наук.</h6>
+              </div></div--> <!--div class="col_6"><div class="mar">
+<img src="https://moidoktorchita.ru/nf.jpg" class="ram">
+<h5><strong>Батоева Виктория Викторовна</strong></h5>
+<h6><b>Акушер-гинеколог, врач высшей категории.</b></h6>
+</div></div-->
+              <div class="clear"> </div>
+              <div class="clear"> </div>
+              <div class="clear"> </div>
+              <hr/><!--h5 class="center"><b>Записаться на приём можно по телефону: <i class="fa fa-whatsapp" aria-hidden="true"></i> 41-62-41 или оставить <a href="/form">заявку на нашем сайте</a></b></h5>
+</div-->
+              <div class="clear"> </div>
+              <div class="clear"> </div>
+            </div>
+            <div id="gtx-trans" style="position: absolute; left: 610px; top: -26.5417px;"> </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/_footer.html')
+    </div>
+  </div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

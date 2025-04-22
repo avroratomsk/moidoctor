@@ -1,21 +1,52 @@
 .admins {
+  padding: 60px 0px;
+
   //.admins__info
 
   &__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+
+    img {
+      border-radius: 5px;
+      border: solid 5px #fff;
+      box-shadow: 0 0 5px #ccc;
+    }
   }
 
   //.admins__name
 
   &__name {
+    font-size: 23px;
+    font-weight: 600;
   }
 
   //.admins__jobtitle
 
   &__jobtitle {
+    color: #f24942;
   }
 
   //.admins__action
 
   &__action {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    color: #f24942;
+
+    a {
+      color: #42b978;
+      transition: $animation_speed;
+
+      @media(hover:hover) {
+        &:hover {
+          color: #00838f;
+        }
+      }
+    }
   }
 }

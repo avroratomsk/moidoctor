@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
-    @@include('html/head.html', {
-        "title":"Сборка GULP"
-    })
-    <body>
-        @@include('html/_header.html')
+@@include('html/head.html', {
+"title":"Сборка GULP"
+})
+<body>
 
-        <main>
-            @@include('html/_content-page.html')
-            @@include('html/_admins.html')
-        </main>
+<div class="overlay-bg"></div>
+<main>
 
-        @@include('html/_footer.html')
+  <div class="container">
+    <div class="inner">
+      @@include('html/_header.html')
+      @@include('html/_slider.html')
+      @@include('html/_content-page.html')
+      @@include('html/_admins.html')
+      @@include('html/_footer.html')
+    </div>
+  </div>
 
-        <script src="js/app.min.js"></script>
-    </body>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
 </html>
