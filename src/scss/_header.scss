@@ -18,6 +18,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   //.header__middle
@@ -45,6 +50,11 @@
         }
       }
     }
+
+    @media screen and (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   //.header__address
@@ -67,6 +77,10 @@
     gap: 15px;
     text-align: right;
 
+    @media screen and (max-width: 992px) {
+      text-align: center;
+    }
+
     a {
       color: $bg;
       text-transform: uppercase;
@@ -82,3 +96,6 @@
   }
 
 }
+
+
+

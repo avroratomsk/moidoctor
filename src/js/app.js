@@ -31,3 +31,14 @@ new VenoBox({
   spinner: 'rotating-plane'
 });
 
+const burgerBtn = document.querySelector('.burger');
+ burgerBtn?.addEventListener('click', () => {
+   const navElement = document.querySelector('.nav');
+   navElement.classList.add('active');
+ })
+
+const closeBtn = document.querySelector('.close');
+ closeBtn?.addEventListener('click', () => {
+   const navElement = document.querySelector('.nav');
+   navElement.classList.remove('active');
+ })
